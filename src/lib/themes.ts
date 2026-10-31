@@ -178,7 +178,7 @@ export const DENSITIES: Record<
   { label: string; paddingY: number; paddingX: number; gap: number; fontSize: number; lineHeight: number; itemGap: number }
 > = {
   [Density.COMPACT]: { label: "Compact", paddingY: 38, paddingX: 42, gap: 14, fontSize: 9.5, lineHeight: 1.42, itemGap: 7 },
-  [Density.REGULAR]: { label: "Regular", paddingY: 34, paddingX: 44, gap: 12, fontSize: 10, lineHeight: 1.34, itemGap: 6 },
+  [Density.REGULAR]: { label: "Regular", paddingY: 28, paddingX: 44, gap: 10, fontSize: 10, lineHeight: 1.3, itemGap: 5 },
   [Density.AIRY]: { label: "Airy", paddingY: 62, paddingX: 64, gap: 26, fontSize: 10.5, lineHeight: 1.65, itemGap: 13 },
 };
 
