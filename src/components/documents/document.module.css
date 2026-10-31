@@ -226,11 +226,24 @@
 .bullets {
   margin-top: calc(var(--u) * 3);
   padding-inline-start: 1.1em;
-  list-style: disc;
+  list-style: none;
 }
 
 .bullets li {
+  position: relative;
   break-inside: avoid;
+}
+
+/* A drawn dot: the disc marker is a font glyph, and the PDF clips its left edge. */
+.bullets li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: -0.8em;
+  top: calc(0.5 * var(--line-height) * 1em - 0.15em);
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background: currentColor;
 }
 
 .bullets li:first-child {
