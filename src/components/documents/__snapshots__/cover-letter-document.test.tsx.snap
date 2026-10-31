@@ -5,7 +5,7 @@ exports[`CoverLetterDocument > renders the prototype's letter 1`] = `
   aria-label="Cover letter"
   class="_page_fa1ef7 _letter_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-newsreader); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --accent: #7a3b2e; --name-size: 30; --name-weight: 500; --heading-size: 15; --heading-weight: 500; --heading-transform: none; --heading-tracking: -.005em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 28; --pad-x: 44; --gap: 10; --item-gap: 5; --font-size: 10; --line-height: 1.3; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-newsreader); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --accent: #7a3b2e; --name-size: 30; --name-weight: 500; --heading-size: 15; --heading-weight: 500; --heading-transform: none; --heading-tracking: -.005em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
 >
   <div
     class="_sender_fa1ef7"

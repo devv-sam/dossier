@@ -80,9 +80,9 @@ describe("layouts and colours", () => {
 
 describe("printCss", () => {
   it("prints on the configured paper with the theme's padding as page margins", () => {
-    // Regular: 50 × 54 units; a unit is 210 / 640 mm on A4.
+    // Regular: 28 × 44 units; a unit is 210 / 640 mm on A4.
     expect(printCss(theme("editorial"), "A4")).toMatch(
-      /^@page \{ size: 210mm 297mm; margin: 16.406mm 17.719mm; \}\n:root \{ --u: 0.328125mm; \}\n/,
+      /^@page \{ size: 210mm 297mm; margin: 9.188mm 14.438mm; \}\n:root \{ --u: 0.328125mm; \}\n/,
     );
     expect(printCss(theme("technical"), "LETTER")).toMatch(/^@page \{ size: 215.9mm 279.4mm; margin: 12.819mm 14.168mm; \}/);
   });

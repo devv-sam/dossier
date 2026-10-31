@@ -15,12 +15,15 @@ import { fullText } from "@/lib/job-search/find";
 import { DEFAULT_RADIUS_KM, foundPostingSchema, POSTED_WITHIN, postingText, RADII_KM, type FoundPosting, type PostedWithin, type SearchQuery, type ShownPosting } from "@/lib/job-search/search";
 import { getJob, startJob } from "@/lib/jobs/runner";
 import { withoutPrivateParts } from "@/lib/letter-frame";
+import { resolveFileName } from "@/lib/file-name";
+import { renderPdf } from "@/lib/pdf/render";
 import { fetchPosting } from "@/lib/posting-fetch";
 import { saveScore } from "@/lib/posting-scores";
 import { loadSearch, runSearch, showMoreFor } from "@/lib/posting-searches";
 import { foundFromPosting, storePosting } from "@/lib/postings";
 import { prisma } from "@/lib/prisma";
-import { loadProfile } from "@/lib/profile-data";
+import { loadProfile, loadProfileName } from "@/lib/profile-data";
+import { loadSettings } from "@/lib/settings-data";
 import { statusInfo } from "@/lib/status";
 import { applyStatusChange } from "@/lib/status-changes";
 import { appVersion } from "@/lib/version";
@@ -449,6 +452,31 @@ export function createDossierServer(origin: string): McpServer {
       const result = connectorDraftJob.result.safeParse(job.result);
       if (!result.success) return failure("The draft finished, but its application couldn't be found.");
       return text({ draft_id, status: "done", application_id: result.data.applicationId, link: linkTo(`/applications/${result.data.applicationId}`) });
+    },
+  );
+
+  server.registerTool(
+    "get_application_pdf",
+    {
+      title: "Get a document as a PDF",
+      description: "An application's tailored resume or cover letter as the PDF Dossier downloads, in the application's theme, with its file name and the file itself in base64.",
+      inputSchema: z.object({ id: z.string().min(1).max(100), doc: z.enum(["resume", "letter"]) }),
+      annotations: { readOnlyHint: true },
+    },
+    async ({ id, doc }) => {
+      const kind = doc === "resume" ? DocumentKind.RESUME : DocumentKind.COVER_LETTER;
+      const application = /^[a-z0-9]{1,64}$/i.test(id)
+        ? await prisma.application.findUnique({
+            where: { id, awaitingReview: false },
+            select: { company: true, role: true, documents: { where: { kind }, select: { id: true } } },
+          })
+        : null;
+      if (!application) return failure("That application no longer exists.");
+      if (application.documents.length === 0) return failure(`This application has no ${doc === "resume" ? "tailored resume" : "cover letter"}.`);
+      const [name, settings] = await Promise.all([loadProfileName(), loadSettings()]);
+      const pdf = await renderPdf(`/print/${doc}/${id}`);
+      const fileName = resolveFileName(settings.fileNamePattern, { name, company: application.company, role: application.role, doc: kind, date: new Date() });
+      return text({ file_name: fileName, pdf_base64: Buffer.from(pdf).toString("base64") });
     },
   );
 
