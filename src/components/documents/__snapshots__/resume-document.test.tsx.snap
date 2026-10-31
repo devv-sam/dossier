@@ -5,7 +5,7 @@ exports[`ResumeDocument > renders the demo profile in Atlas 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7 _centered_fa1ef7 _banner_fa1ef7 _timeline_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-libre-caslon); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-inter); --accent: #a14a1f; --name-size: 30; --name-weight: 500; --heading-size: 9.5; --heading-weight: 600; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28; --on-accent: #ffffff;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-libre-caslon); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-inter); --accent: #a14a1f; --name-size: 30; --name-weight: 500; --heading-size: 9.5; --heading-weight: 600; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28; --on-accent: #ffffff;"
 >
   <header
     class="_header_fa1ef7"
@@ -66,228 +66,6 @@ exports[`ResumeDocument > renders the demo profile in Atlas 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -340,6 +118,170 @@ exports[`ResumeDocument > renders the demo profile in Atlas 1`] = `
               Willem de Kooning Academy
             </p>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -427,7 +369,7 @@ exports[`ResumeDocument > renders the demo profile in Chronicle 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7 _timeline_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-fraunces); --body-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-source-serif); --accent: #7b2337; --name-size: 30; --name-weight: 500; --heading-size: 12; --heading-weight: 600; --heading-transform: none; --heading-tracking: 0; --heading-rule: 1; --heading-padding: 3; --sidebar-width: 150; --sidebar-gap: 28;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-fraunces); --body-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-source-serif); --accent: #7b2337; --name-size: 30; --name-weight: 500; --heading-size: 12; --heading-weight: 600; --heading-transform: none; --heading-tracking: 0; --heading-rule: 1; --heading-padding: 3; --sidebar-width: 150; --sidebar-gap: 28;"
 >
   <header
     class="_header_fa1ef7"
@@ -488,228 +430,6 @@ exports[`ResumeDocument > renders the demo profile in Chronicle 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -762,6 +482,170 @@ exports[`ResumeDocument > renders the demo profile in Chronicle 1`] = `
               Willem de Kooning Academy
             </p>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -849,7 +733,7 @@ exports[`ResumeDocument > renders the demo profile in Classic 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7 _centered_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-eb-garamond); --body-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-eb-garamond); --accent: #1d1c1a; --name-size: 30; --name-weight: 500; --heading-size: 12; --heading-weight: 600; --heading-transform: none; --heading-tracking: 0; --heading-rule: 1; --heading-padding: 3; --sidebar-width: 150; --sidebar-gap: 28;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-eb-garamond); --body-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-eb-garamond); --accent: #1d1c1a; --name-size: 30; --name-weight: 500; --heading-size: 12; --heading-weight: 600; --heading-transform: none; --heading-tracking: 0; --heading-rule: 1; --heading-padding: 3; --sidebar-width: 150; --sidebar-gap: 28;"
 >
   <header
     class="_header_fa1ef7"
@@ -910,228 +794,6 @@ exports[`ResumeDocument > renders the demo profile in Classic 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -1184,6 +846,170 @@ exports[`ResumeDocument > renders the demo profile in Classic 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -1385,228 +1211,6 @@ exports[`ResumeDocument > renders the demo profile in Console 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -1667,6 +1271,170 @@ exports[`ResumeDocument > renders the demo profile in Console 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
           Publications
         </h2>
         <div
@@ -1708,7 +1476,7 @@ exports[`ResumeDocument > renders the demo profile in Editorial 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-newsreader); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --accent: #7a3b2e; --name-size: 30; --name-weight: 500; --heading-size: 15; --heading-weight: 500; --heading-transform: none; --heading-tracking: -.005em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-serif), var(--typeface-newsreader); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --accent: #7a3b2e; --name-size: 30; --name-weight: 500; --heading-size: 15; --heading-weight: 500; --heading-transform: none; --heading-tracking: -.005em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
 >
   <header
     class="_header_fa1ef7"
@@ -1769,228 +1537,6 @@ exports[`ResumeDocument > renders the demo profile in Editorial 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -2043,6 +1589,170 @@ exports[`ResumeDocument > renders the demo profile in Editorial 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -2191,228 +1901,6 @@ exports[`ResumeDocument > renders the demo profile in Folio 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -2465,6 +1953,170 @@ exports[`ResumeDocument > renders the demo profile in Folio 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -2666,228 +2318,6 @@ exports[`ResumeDocument > renders the demo profile in Ledger 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -2940,6 +2370,170 @@ exports[`ResumeDocument > renders the demo profile in Ledger 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -3050,228 +2644,6 @@ exports[`ResumeDocument > renders the demo profile in Minimal 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -3324,6 +2696,170 @@ exports[`ResumeDocument > renders the demo profile in Minimal 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -3411,7 +2947,7 @@ exports[`ResumeDocument > renders the demo profile in Modern 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7 _split_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --accent: #2f5d8a; --name-size: 25; --name-weight: 600; --heading-size: 9.5; --heading-weight: 600; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-geist); --accent: #2f5d8a; --name-size: 25; --name-weight: 600; --heading-size: 9.5; --heading-weight: 600; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
 >
   <header
     class="_header_fa1ef7"
@@ -3525,228 +3061,6 @@ exports[`ResumeDocument > renders the demo profile in Modern 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -3807,6 +3121,170 @@ exports[`ResumeDocument > renders the demo profile in Modern 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
           Publications
         </h2>
         <div
@@ -3848,7 +3326,7 @@ exports[`ResumeDocument > renders the demo profile in Signal 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7 _banner_fa1ef7 _headingBar_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-manrope); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-manrope); --accent: #1f3a5f; --name-size: 25; --name-weight: 600; --heading-size: 9.5; --heading-weight: 700; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28; --on-accent: #ffffff;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-manrope); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-manrope); --accent: #1f3a5f; --name-size: 25; --name-weight: 600; --heading-size: 9.5; --heading-weight: 700; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28; --on-accent: #ffffff;"
 >
   <header
     class="_header_fa1ef7"
@@ -3909,228 +3387,6 @@ exports[`ResumeDocument > renders the demo profile in Signal 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -4183,6 +3439,170 @@ exports[`ResumeDocument > renders the demo profile in Signal 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -4270,7 +3690,7 @@ exports[`ResumeDocument > renders the demo profile in Studio 1`] = `
   aria-label="Resume"
   class="_page_fa1ef7 _split_fa1ef7 _sidebarEnd_fa1ef7 _tintedSidebar_fa1ef7"
   dir="ltr"
-  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 50; --pad-x: 54; --gap: 20; --item-gap: 10; --font-size: 10.5; --line-height: 1.5; --head-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-space-grotesk); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-inter); --accent: #1f6f6b; --name-size: 25; --name-weight: 600; --heading-size: 9.5; --heading-weight: 600; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
+  style="--page-height: 905; --paper-width: 210; --paper-height: 297; --pad-y: 34; --pad-x: 44; --gap: 12; --item-gap: 6; --font-size: 10; --line-height: 1.34; --head-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-space-grotesk); --body-font: var(--script-fonts), var(--typeface-greek-sans), var(--typeface-inter); --accent: #1f6f6b; --name-size: 25; --name-weight: 600; --heading-size: 9.5; --heading-weight: 600; --heading-transform: uppercase; --heading-tracking: .14em; --heading-rule: 0; --heading-padding: 0; --sidebar-width: 150; --sidebar-gap: 28;"
 >
   <header
     class="_header_fa1ef7"
@@ -4292,228 +3712,6 @@ exports[`ResumeDocument > renders the demo profile in Studio 1`] = `
     <div
       class="_column_fa1ef7"
     >
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
       <section
         class="_section_fa1ef7"
       >
@@ -4572,6 +3770,170 @@ exports[`ResumeDocument > renders the demo profile in Studio 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section
@@ -4821,228 +4183,6 @@ exports[`ResumeDocument > renders the demo profile in Technical 1`] = `
         <h2
           class="_sectionTitle_fa1ef7"
         >
-          Profile
-        </h2>
-        <div
-          data-unit="summary"
-        >
-          <p
-            class="_summary_fa1ef7"
-          >
-            Product designer with nine years of experience turning complicated operational tools into calm, usable software. I like working close to engineering and closer to the people who use what we build.
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Experience
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Senior Product Designer
-              </span>
-              , 
-              Northwind Logistics
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Mar 2021 – Present
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Freight platform for European carriers, 300 people
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
-            </li>
-            <li>
-              Built and maintained the design system across six product teams
-            </li>
-            <li>
-              Mentored three junior designers through their first year
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Interaction design, Design systems, User research, Workshop facilitation
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e2"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Product Designer
-              </span>
-              , 
-              Fieldnote
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jun 2018 – Feb 2021
-            </span>
-          </div>
-          <p
-            class="_descriptor_fa1ef7"
-          >
-            Note-taking app for field researchers
-          </p>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Designed the mobile note-taking app from first prototype to 120k users
-            </li>
-            <li>
-              Ran monthly research sessions with field researchers
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Prototyping, User research, Figma
-          </p>
-        </div>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="experience:e3"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                UX Designer
-              </span>
-              , 
-              Studio Brik
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Sep 2015 – May 2018
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Delivered web projects for cultural institutions and municipalities
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            HTML & CSS, Interaction design
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
-          Projects
-        </h2>
-        <div
-          class="_entry_fa1ef7"
-          data-unit="project:p1"
-        >
-          <div
-            class="_entryHead_fa1ef7"
-          >
-            <p>
-              <span
-                class="_entryTitle_fa1ef7"
-              >
-                Tidewater design tokens
-              </span>
-              , 
-              <bdi
-                dir="ltr"
-              >
-                github.com/janedoe/tidewater
-              </bdi>
-            </p>
-            <span
-              class="_dates_fa1ef7"
-            >
-              Jan 2023 – Present
-            </span>
-          </div>
-          <ul
-            class="_bullets_fa1ef7"
-          >
-            <li>
-              Built an open-source Figma plugin that turns design tokens into CSS variables
-            </li>
-            <li>
-              Maintain it with two contributors; used by design teams at several logistics startups
-            </li>
-          </ul>
-          <p
-            class="_entrySkills_fa1ef7"
-          >
-            <span
-              class="_accent_fa1ef7"
-            >
-              Skills · 
-            </span>
-            Design systems, Figma, HTML & CSS
-          </p>
-        </div>
-      </section>
-      <section
-        class="_section_fa1ef7"
-      >
-        <h2
-          class="_sectionTitle_fa1ef7"
-        >
           Education
         </h2>
         <div
@@ -5095,6 +4235,170 @@ exports[`ResumeDocument > renders the demo profile in Technical 1`] = `
               2010 – 2013
             </span>
           </div>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Experience
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Senior Product Designer
+              </span>
+              , 
+              Northwind Logistics
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Mar 2021 – Present
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Freight platform for European carriers, 300 people
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Led the redesign of the carrier portal used daily by 4,000+ dispatchers
+            </li>
+            <li>
+              Built and maintained the design system across six product teams
+            </li>
+            <li>
+              Mentored three junior designers through their first year
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e2"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Product Designer
+              </span>
+              , 
+              Fieldnote
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jun 2018 – Feb 2021
+            </span>
+          </div>
+          <p
+            class="_descriptor_fa1ef7"
+          >
+            Note-taking app for field researchers
+          </p>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Designed the mobile note-taking app from first prototype to 120k users
+            </li>
+            <li>
+              Ran monthly research sessions with field researchers
+            </li>
+          </ul>
+        </div>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="experience:e3"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                UX Designer
+              </span>
+              , 
+              Studio Brik
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Sep 2015 – May 2018
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Delivered web projects for cultural institutions and municipalities
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="_section_fa1ef7"
+      >
+        <h2
+          class="_sectionTitle_fa1ef7"
+        >
+          Projects
+        </h2>
+        <div
+          class="_entry_fa1ef7"
+          data-unit="project:p1"
+        >
+          <div
+            class="_entryHead_fa1ef7"
+          >
+            <p>
+              <span
+                class="_entryTitle_fa1ef7"
+              >
+                Tidewater design tokens
+              </span>
+              , 
+              <bdi
+                dir="ltr"
+              >
+                github.com/janedoe/tidewater
+              </bdi>
+            </p>
+            <span
+              class="_dates_fa1ef7"
+            >
+              Jan 2023 – Present
+            </span>
+          </div>
+          <ul
+            class="_bullets_fa1ef7"
+          >
+            <li>
+              Built an open-source Figma plugin that turns design tokens into CSS variables
+            </li>
+            <li>
+              Maintain it with two contributors; used by design teams at several logistics startups
+            </li>
+          </ul>
         </div>
       </section>
       <section

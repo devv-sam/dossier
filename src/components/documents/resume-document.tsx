@@ -78,9 +78,18 @@ export function ResumeDocument({ theme, profile, paper, layout, language, render
   ].filter(Boolean);
 
   const main = [
-    content.summary && (
-      <DocumentSection key="summary" title={labels.profile}>
-        {renderUnit({ id: "summary", children: <p className={styles.summary}>{content.summary}</p> })}
+    content.education.length > 0 && (
+      <DocumentSection key="education" title={labels.education}>
+        {content.education.map((entry) => (
+          <Fragment key={entry.id}>
+            {renderUnit({
+              id: `education:${entry.id}`,
+              className: styles.entry,
+              head: <EntryHead title={entry.degree} at={entry.school} dates={entry.dates} timeline={resolved.timeline} />,
+              children: entry.notes && <p className={styles.muted}>{entry.notes}</p>,
+            })}
+          </Fragment>
+        ))}
       </DocumentSection>
     ),
     content.experience.length > 0 && (
@@ -100,12 +109,6 @@ export function ResumeDocument({ theme, profile, paper, layout, language, render
                         <li key={index}>{bullet}</li>
                       ))}
                     </ul>
-                  )}
-                  {role.skills.length > 0 && (
-                    <p className={styles.entrySkills}>
-                      <span className={styles.accent}>{`${labels.skills} · `}</span>
-                      {role.skills.join(", ")}
-                    </p>
                   )}
                 </>
               ),
@@ -138,28 +141,8 @@ export function ResumeDocument({ theme, profile, paper, layout, language, render
                       ))}
                     </ul>
                   )}
-                  {project.skills.length > 0 && (
-                    <p className={styles.entrySkills}>
-                      <span className={styles.accent}>{`${labels.skills} · `}</span>
-                      {project.skills.join(", ")}
-                    </p>
-                  )}
                 </>
               ),
-            })}
-          </Fragment>
-        ))}
-      </DocumentSection>
-    ),
-    content.education.length > 0 && (
-      <DocumentSection key="education" title={labels.education}>
-        {content.education.map((entry) => (
-          <Fragment key={entry.id}>
-            {renderUnit({
-              id: `education:${entry.id}`,
-              className: styles.entry,
-              head: <EntryHead title={entry.degree} at={entry.school} dates={entry.dates} timeline={resolved.timeline} />,
-              children: entry.notes && <p className={styles.muted}>{entry.notes}</p>,
             })}
           </Fragment>
         ))}

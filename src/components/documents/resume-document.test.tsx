@@ -25,27 +25,27 @@ describe("ResumeDocument", () => {
     expect(screen.getByText("jane.doe@example.com").parentElement?.textContent).toBe(
       "jane.doe@example.com  ·  +31 6 1234 5678  ·  Rotterdam, Netherlands  ·  example.com  ·  linkedin.com/in/janedoe-example",
     );
-    expect(sectionTitles()).toEqual(["Profile", "Experience", "Projects", "Education", "Publications", "Skills", "Languages"]);
+    expect(sectionTitles()).toEqual(["Education", "Experience", "Projects", "Publications", "Skills", "Languages"]);
   });
 
   it("lists contact details first in the sidebar of sidebar layouts", () => {
     render(<ResumeDocument theme={theme("modern")} profile={profile} paper="A4" today={today} />);
-    expect(sectionTitles()).toEqual(["Contact", "Skills", "Languages", "Profile", "Experience", "Projects", "Education", "Publications"]);
+    expect(sectionTitles()).toEqual(["Contact", "Skills", "Languages", "Education", "Experience", "Projects", "Publications"]);
     const contact = screen.getByRole("heading", { name: "Contact" }).parentElement!;
     expect(within(contact).getAllByRole("listitem").map((item) => item.textContent)).toContain("example.com");
   });
 
   it("renders a sidebar theme in a single column when asked", () => {
     render(<ResumeDocument theme={theme("modern")} profile={profile} paper="A4" layout="SINGLE" today={today} />);
-    expect(sectionTitles()).toEqual(["Profile", "Experience", "Projects", "Education", "Publications", "Skills", "Languages"]);
+    expect(sectionTitles()).toEqual(["Education", "Experience", "Projects", "Publications", "Skills", "Languages"]);
   });
 
   it("reads a sidebar at the end of the line after the main column, on its tinted panel", () => {
     render(<ResumeDocument theme={theme("studio")} profile={profile} paper="A4" today={today} />);
-    expect(sectionTitles()).toEqual(["Profile", "Experience", "Projects", "Education", "Publications", "Contact", "Skills", "Languages"]);
+    expect(sectionTitles()).toEqual(["Education", "Experience", "Projects", "Publications", "Contact", "Skills", "Languages"]);
     const panel = screen.getByRole("heading", { name: "Contact" }).closest("section")!.parentElement!;
     expect(panel.className).toMatch(/sidebarPanel/);
-    expect(screen.getByRole("heading", { name: "Profile" }).closest("section")!.parentElement!.className).not.toMatch(/sidebarPanel/);
+    expect(screen.getByRole("heading", { name: "Education" }).closest("section")!.parentElement!.className).not.toMatch(/sidebarPanel/);
   });
 
   it("leaves out the tinted panel when the sidebar has nothing in it", () => {
@@ -71,7 +71,7 @@ describe("ResumeDocument", () => {
 
   it("keeps side headings in a single column", () => {
     render(<ResumeDocument theme={theme("folio")} profile={profile} paper="A4" today={today} />);
-    expect(sectionTitles()).toEqual(["Profile", "Experience", "Projects", "Education", "Publications", "Skills", "Languages"]);
+    expect(sectionTitles()).toEqual(["Education", "Experience", "Projects", "Publications", "Skills", "Languages"]);
     expect(screen.getByRole("article", { name: "Resume" }).className).toMatch(/sideHeadings/);
   });
 
@@ -80,23 +80,22 @@ describe("ResumeDocument", () => {
     const role = screen.getByText("UX Designer").closest("[data-unit]")!;
     expect(role).toHaveAttribute("data-unit", "experience:e3");
     expect(role).toHaveTextContent("UX Designer, Studio BrikSep 2015 – May 2018");
-    expect(role).toHaveTextContent("Skills · HTML & CSS, Interaction design");
+    expect(role).not.toHaveTextContent("Skills · ");
     expect(screen.getByText("Thesis on trust in automated scheduling tools")).toBeInTheDocument();
   });
 
   it("writes its headings, dates, levels and age in the document's language", () => {
     const withAge = { ...profile, basics: { ...profile.basics, showAge: true } };
     render(<ResumeDocument theme={theme("modern")} profile={withAge} paper="A4" today={today} language="German" includeReferences />);
-    expect(sectionTitles()).toEqual(["Kontakt", "Kenntnisse", "Sprachen", "Profil", "Berufserfahrung", "Projekte", "Ausbildung", "Publikationen", "Referenzen"]);
+    expect(sectionTitles()).toEqual(["Kontakt", "Kenntnisse", "Sprachen", "Ausbildung", "Berufserfahrung", "Projekte", "Publikationen", "Referenzen"]);
     expect(screen.getByText("März 2021 – Heute")).toBeInTheDocument();
-    expect(screen.getByText("UX Designer").closest("[data-unit]")).toHaveTextContent("Kenntnisse · HTML & CSS, Interaction design");
-    expect(screen.getByText(/^Dutch: Muttersprache · English: Fließend \(C2\)/)).toBeInTheDocument();
+        expect(screen.getByText(/^Dutch: Muttersprache · English: Fließend \(C2\)/)).toBeInTheDocument();
     expect(screen.getByText("34 Jahre")).toBeInTheDocument();
   });
 
   it("keeps English headings for a language without its own", () => {
     render(<ResumeDocument theme={theme("editorial")} profile={profile} paper="A4" today={today} language="Hebrew" />);
-    expect(sectionTitles()).toEqual(["Profile", "Experience", "Projects", "Education", "Publications", "Skills", "Languages"]);
+    expect(sectionTitles()).toEqual(["Education", "Experience", "Projects", "Publications", "Skills", "Languages"]);
     expect(screen.getByText("Mar 2021 – Present")).toBeInTheDocument();
   });
 
@@ -139,10 +138,7 @@ describe("ResumeDocument", () => {
 
   it("renders a tailored resume from its units", () => {
     render(<ResumeDocument theme={theme("editorial")} profile={profile} paper="A4" units={demoResumeUnits()} />);
-    expect(screen.getByText(/^Senior product designer with nine years of making complex/).closest("[data-unit]")).toHaveAttribute(
-      "data-unit",
-      "summary",
-    );
+    expect(screen.queryByText(/^Senior product designer with nine years of making complex/)).not.toBeInTheDocument();
     expect(screen.getByText(/a dense, high-stakes workflow$/)).toBeInTheDocument();
   });
 
@@ -161,10 +157,12 @@ describe("ResumeDocument", () => {
         )}
       />,
     );
-    // Every unit, in reading order: the main column, then skills and languages.
-    const ids = demoResumeUnits().map((unit) => unit.id);
-    const drawn = [...container.querySelectorAll("[data-testid]")].map((element) => element.getAttribute("data-testid"));
-    expect(drawn).toEqual([...ids.filter((id) => id !== "skills" && id !== "languages"), "skills", "languages"]);
+    // Every unit but the summary, which a resume leaves out, with education ahead of experience.
+    const ids = demoResumeUnits().map((unit) => unit.id).filter((id) => id !== "summary");
+    const drawn = [...container.querySelectorAll("[data-testid]")].map((element) => element.getAttribute("data-testid")!);
+    expect([...drawn].sort()).toEqual([...ids].sort());
+    expect(drawn.findIndex((id) => id.startsWith("education:"))).toBeLessThan(drawn.findIndex((id) => id.startsWith("experience:")));
+    expect(drawn.slice(-2)).toEqual(["skills", "languages"]);
     // A role's title line comes apart from its text, so it can stay while the text is edited.
     expect(screen.getByTestId("experience:e3")).toHaveTextContent(/^UX Designer, Studio Brik/);
   });
@@ -176,7 +174,7 @@ describe("ResumeDocument", () => {
     expect(project).toHaveTextContent("Tidewater design tokens, github.com/janedoe/tidewater");
     expect(project).toHaveTextContent("Jan 2023 – Present");
     expect(project).toHaveTextContent("Built an open-source Figma plugin that turns design tokens into CSS variables");
-    expect(project).toHaveTextContent("Skills · Design systems, Figma, HTML & CSS");
+    expect(project).not.toHaveTextContent("Skills · ");
   });
 
   it("shows publications with their bold, italics and a link that opens (#218)", () => {
