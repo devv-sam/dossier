@@ -216,9 +216,9 @@ describe("tailorResume", () => {
     expect(text).not.toContain("What the candidate tells you");
   });
 
-  it("returns units, keeping only real roles and the profile's own skills (APP-4)", async () => {
+  it("returns units, keeping only real roles and all of the profile's own skills (APP-4)", async () => {
     const { data, promptVersion } = await tailorResume(model(answer), { profile, extracted, match: null, facts: [], posting }, options);
-    expect(promptVersion).toBe("tailor-resume@6");
+    expect(promptVersion).toBe("tailor-resume@7");
     expect(data.map((unit) => unit.id)).toEqual([
       "summary",
       "experience:e1",
@@ -239,7 +239,10 @@ describe("tailorResume", () => {
     expect(data.find((unit) => unit.id === "experience:e1")?.text).toBe("Led the carrier portal redesign\nOwned the design system");
     // A role the model skipped keeps its own bullets.
     expect(data.find((unit) => unit.id === "experience:e2")?.text).toBe(profile.experience[1].bullets);
-    expect(data.find((unit) => unit.id === "skills")?.text).toBe("Design systems · Figma · User research");
+    // The model's ranked skills come first; the profile's others follow rather than being dropped.
+    expect(data.find((unit) => unit.id === "skills")?.text).toBe(
+      "Design systems · Figma · User research · Interaction design · Prototyping · HTML & CSS · Workshop facilitation",
+    );
     expect(data.find((unit) => unit.id === "languages")?.text).toBe("Dutch: Native · English: Fluent (C2) · German: Intermediate (B1)");
   });
 
@@ -286,10 +289,25 @@ describe("tailorResume", () => {
 });
 
 describe("resumeUnits' skills (#280)", () => {
-  it("keeps the model's order, a line per group where its first skill comes, only the profile's own skills", () => {
-    const grouped = { ...demoProfile(), skills: demoProfile().skills.map((skill) => ({ ...skill, group: ["Figma", "Prototyping"].includes(skill.name) ? "Tools" : "" })) };
+  const grouped = { ...demoProfile(), skills: demoProfile().skills.map((skill) => ({ ...skill, group: ["Figma", "Prototyping"].includes(skill.name) ? "Tools" : "" })) };
+  const skillsText = (units: ReturnType<typeof resumeUnits>) => units.find((unit) => unit.id === "skills")?.text;
+
+  it("puts the model's ranked skills first, a line per group where its first skill comes, and none that aren't the profile's", () => {
     const units = resumeUnits(grouped, { summary: "", roles: [], projects: [], education: [], skills: ["figma", "User research", "Prototyping", "Kubernetes", "Design systems"] });
-    expect(units.find((unit) => unit.id === "skills")?.text).toBe("Tools: Figma · Prototyping\nUser research · Design systems");
+    expect(skillsText(units)?.split("\n")[0]).toBe("Tools: Figma · Prototyping");
+    expect(skillsText(units)).not.toMatch(/Kubernetes/);
+  });
+
+  it("keeps every skill in the profile, those the model left out after the ones it ranked", () => {
+    const units = resumeUnits(grouped, { summary: "", roles: [], projects: [], education: [], skills: ["User research"] });
+    const text = skillsText(units) ?? "";
+    for (const skill of grouped.skills) expect(text).toContain(skill.name);
+    expect(text.split("\n")[0]).toMatch(/^User research/);
+  });
+
+  it("keeps every skill when the model returns none", () => {
+    const units = resumeUnits(grouped, { summary: "", roles: [], projects: [], education: [], skills: [] });
+    for (const skill of grouped.skills) expect(skillsText(units)).toContain(skill.name);
   });
 });
 
