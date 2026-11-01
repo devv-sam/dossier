@@ -84,12 +84,16 @@ export const writeCoverLetter: Task<CoverLetterInput, Unit[]> = async (provider,
 
   // English letters get the tone's own sign-off; other languages keep the model's.
   const language = options.language ?? extracted.language ?? "English";
-  // Small models ignore a list of words to avoid, so check it: one rewrite, kept only if it's better.
+  // Small models ignore a list of words to avoid, so check it: up to two rewrites, each kept only if it's no worse.
   if (/^english$/i.test(language)) {
-    const first = voiceProblems(answer.paragraphs);
-    if (first.score > 0) {
-      const retry = await ask([request, { role: "assistant", content: JSON.stringify(answer) }, { role: "user", content: rewriteRequest(first) }]);
-      if (voiceProblems(retry.paragraphs).score <= first.score) answer = retry;
+    let problems = voiceProblems(answer.paragraphs);
+    for (let attempt = 0; attempt < MAX_REWRITES && problems.score > 0; attempt++) {
+      const retry = await ask([request, { role: "assistant", content: JSON.stringify(answer) }, { role: "user", content: rewriteRequest(problems) }]);
+      const next = voiceProblems(retry.paragraphs);
+      if (next.score <= problems.score) {
+        answer = retry;
+        problems = next;
+      }
     }
   }
   const signOff = /^english$/i.test(language) || !answer.signOff.trim() ? TONES[tone].signOff : answer.signOff.trim();
@@ -110,6 +114,7 @@ export const writeCoverLetter: Task<CoverLetterInput, Unit[]> = async (provider,
 };
 
 const MAX_WORDS = 190;
+const MAX_REWRITES = 2;
 
 /** Words and phrases that mark a letter as machine-written (see COVER_LETTER_APPROACH). */
 const STOCK_WORDS =
@@ -127,7 +132,9 @@ export function voiceProblems(paragraphs: { text: string }[]): { words: string[]
 function rewriteRequest({ words, wordCount, tooLong }: ReturnType<typeof voiceProblems>): string {
   return [
     "Rewrite the letter with the same facts and the same JSON shape.",
-    words.length > 0 ? `Don't use these words or phrases: ${words.join(", ")}. Say the plain thing instead.` : "",
+    words.length > 0
+      ? `Don't use these words or phrases anywhere: ${words.join(", ")}. Delete any sentence that only says how the candidate feels about the role, and say the plain thing instead.`
+      : "",
     tooLong ? `It is ${wordCount} words. Cut it to 150 words or fewer: three short paragraphs.` : "",
   ]
     .filter(Boolean)

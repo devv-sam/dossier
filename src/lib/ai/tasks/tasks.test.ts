@@ -355,12 +355,12 @@ describe("writeCoverLetter", () => {
     expect(data.find((unit) => unit.id === "paragraph:1")?.text).toBe("I built the carrier portal at Northwind.");
   });
 
-  it("keeps the first draft when the rewrite is no better, and doesn't ask for a second one", async () => {
+  it("keeps the first draft when the rewrites are no better, and stops after two", async () => {
     const stock = { ...answer, paragraphs: [{ label: "Opening", text: "I was excited to see the role." }] };
     const worse = { ...answer, paragraphs: [{ label: "Opening", text: "I am thrilled, eager and passionate about this role." }] };
     const provider = new MockProvider({ reply: (call) => (call.messages.length > 1 ? worse : stock) });
     const { data } = await writeCoverLetter(provider, { profile, extracted, match, tone: "WARM", facts: [], posting }, options);
-    expect(provider.calls).toHaveLength(2);
+    expect(provider.calls).toHaveLength(3);
     expect(data.find((unit) => unit.id === "paragraph:1")?.text).toBe("I was excited to see the role.");
   });
 
