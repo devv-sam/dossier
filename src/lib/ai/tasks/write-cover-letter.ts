@@ -60,38 +60,38 @@ export type CoverLetterInput = {
  * from the profile when the application is created (src/lib/letter-frame.ts).
  */
 export const writeCoverLetter: Task<CoverLetterInput, Unit[]> = async (provider, { profile, extracted, match, tone, facts, posting }, options) => {
-  const answer = await provider.complete({
-    system: system(
-      INSTRUCTIONS,
-      COVER_LETTER_APPROACH,
-      `Tone: ${TONES[tone].label}. ${TONES[tone].description}`,
-      truthfulness(options.strict),
-      candidateFacts(profile, facts),
-      CREATIVITY[options.creativity],
-      languageRule(options.language),
-      UNTRUSTED_POSTING,
-      NO_EM_DASHES,
-    ),
-    messages: [
-      {
-        role: "user",
-        content: [
-          `The candidate's profile:\n${profileForPrompt(profile)}`,
-          `The job:\n${jobForPrompt(extracted, match)}`,
-          applicationFacts(facts),
-        ]
-          .filter(Boolean)
-          .join("\n\n"),
-      },
-    ],
-    schema: answerSchema,
-    schemaName: "cover_letter",
-    creativity: options.creativity,
-    signal: options.signal,
-  });
+  const instructions = system(
+    INSTRUCTIONS,
+    COVER_LETTER_APPROACH,
+    `Tone: ${TONES[tone].label}. ${TONES[tone].description}`,
+    truthfulness(options.strict),
+    candidateFacts(profile, facts),
+    CREATIVITY[options.creativity],
+    languageRule(options.language),
+    UNTRUSTED_POSTING,
+    NO_EM_DASHES,
+  );
+  const request = {
+    role: "user" as const,
+    content: [`The candidate's profile:\n${profileForPrompt(profile)}`, `The job:\n${jobForPrompt(extracted, match)}`, applicationFacts(facts)]
+      .filter(Boolean)
+      .join("\n\n"),
+  };
+  const ask = (messages: { role: "user" | "assistant"; content: string }[]) =>
+    provider.complete({ system: instructions, messages, schema: answerSchema, schemaName: "cover_letter", creativity: options.creativity, signal: options.signal });
+
+  let answer = await ask([request]);
 
   // English letters get the tone's own sign-off; other languages keep the model's.
   const language = options.language ?? extracted.language ?? "English";
+  // Small models ignore a list of words to avoid, so check it: one rewrite, kept only if it's better.
+  if (/^english$/i.test(language)) {
+    const first = voiceProblems(answer.paragraphs);
+    if (first.score > 0) {
+      const retry = await ask([request, { role: "assistant", content: JSON.stringify(answer) }, { role: "user", content: rewriteRequest(first) }]);
+      if (voiceProblems(retry.paragraphs).score <= first.score) answer = retry;
+    }
+  }
   const signOff = /^english$/i.test(language) || !answer.signOff.trim() ? TONES[tone].signOff : answer.signOff.trim();
   const units = unitsSchema.parse([
     // Left out when empty: the English ones fill in (src/lib/letter-frame.ts).
@@ -108,6 +108,31 @@ export const writeCoverLetter: Task<CoverLetterInput, Unit[]> = async (provider,
     promptVersion: WRITE_COVER_LETTER_VERSION,
   };
 };
+
+const MAX_WORDS = 190;
+
+/** Words and phrases that mark a letter as machine-written (see COVER_LETTER_APPROACH). */
+const STOCK_WORDS =
+  /\b(?:excit\w*|thrill\w*|eager\w*|passion\w*|aligns? (?:perfectly|with)|great fit|leverag\w*|utiliz\w*|empower\w*|foster\w*|cultivat\w*|facilitat\w*|streamlin\w*|seamless\w*|robust|holistic|innovative|cutting-edge|user-centric|journey|landscape|testament|furthermore|moreover|additionally|significantly|crucial|essential|resonates?|delve|revolutioniz\w*|I believe|I am confident|I'm confident|boundaries)\b/gi;
+
+/** What's wrong with a letter's voice: the stock words in it, whether it runs long, and a score to compare drafts by. */
+export function voiceProblems(paragraphs: { text: string }[]): { words: string[]; wordCount: number; tooLong: boolean; score: number } {
+  const text = paragraphs.map((paragraph) => paragraph.text).join(" ");
+  const words = [...new Set((text.match(STOCK_WORDS) ?? []).map((word) => word.toLowerCase()))];
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
+  const tooLong = wordCount > MAX_WORDS;
+  return { words, wordCount, tooLong, score: words.length + (tooLong ? 2 : 0) };
+}
+
+function rewriteRequest({ words, wordCount, tooLong }: ReturnType<typeof voiceProblems>): string {
+  return [
+    "Rewrite the letter with the same facts and the same JSON shape.",
+    words.length > 0 ? `Don't use these words or phrases: ${words.join(", ")}. Say the plain thing instead.` : "",
+    tooLong ? `It is ${wordCount} words. Cut it to 150 words or fewer: three short paragraphs.` : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
 
 /** An address block's lines, trimmed, without empty ones. */
 const tidyLines = (text: string) =>

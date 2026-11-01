@@ -11,7 +11,7 @@ import { MockProvider } from "../providers/mock";
 import { isoDate } from "./extract-posting";
 import { sameSkill } from "./match-requirements";
 import { COVER_LETTER_APPROACH } from "./prompt-parts";
-import { withoutFrame } from "./write-cover-letter";
+import { voiceProblems, withoutFrame } from "./write-cover-letter";
 import { resumeUnits } from "./tailor-resume";
 import { recipient } from "./write-email";
 import {
@@ -343,6 +343,36 @@ describe("writeCoverLetter", () => {
     expect(sent(provider).system).toContain(COVER_LETTER_APPROACH);
     // Gaps go along, so the letter can acknowledge them honestly.
     expect(prompt(provider)).toMatch(/"inProfile": "gap"/);
+  });
+
+  it("asks once for a rewrite when the letter uses stock words, and keeps the better draft", async () => {
+    const stock = { ...answer, paragraphs: [{ label: "Opening", text: "I am excited and passionate about leveraging my skills." }] };
+    const plain = { ...answer, paragraphs: [{ label: "Opening", text: "I built the carrier portal at Northwind." }] };
+    const provider = new MockProvider({ reply: (call) => (call.messages.length > 1 ? plain : stock) });
+    const { data } = await writeCoverLetter(provider, { profile, extracted, match, tone: "WARM", facts: [], posting }, options);
+    expect(provider.calls).toHaveLength(2);
+    expect(provider.calls[1].messages.at(-1)?.content).toMatch(/Don't use these words or phrases: excited, passionate, leveraging/);
+    expect(data.find((unit) => unit.id === "paragraph:1")?.text).toBe("I built the carrier portal at Northwind.");
+  });
+
+  it("keeps the first draft when the rewrite is no better, and doesn't ask for a second one", async () => {
+    const stock = { ...answer, paragraphs: [{ label: "Opening", text: "I was excited to see the role." }] };
+    const worse = { ...answer, paragraphs: [{ label: "Opening", text: "I am thrilled, eager and passionate about this role." }] };
+    const provider = new MockProvider({ reply: (call) => (call.messages.length > 1 ? worse : stock) });
+    const { data } = await writeCoverLetter(provider, { profile, extracted, match, tone: "WARM", facts: [], posting }, options);
+    expect(provider.calls).toHaveLength(2);
+    expect(data.find((unit) => unit.id === "paragraph:1")?.text).toBe("I was excited to see the role.");
+  });
+
+  it("doesn't ask for a rewrite of a plain, short letter", async () => {
+    const provider = model({ ...answer, paragraphs: [{ label: "Opening", text: "I built the carrier portal at Northwind." }] });
+    await writeCoverLetter(provider, { profile, extracted, match, tone: "WARM", facts: [], posting }, options);
+    expect(provider.calls).toHaveLength(1);
+  });
+
+  it("measures a letter's voice: stock words and length", () => {
+    expect(voiceProblems([{ text: "I am thrilled to leverage my passion." }])).toMatchObject({ words: ["thrilled", "leverage", "passion"], tooLong: false, score: 3 });
+    expect(voiceProblems([{ text: "word ".repeat(200) }])).toMatchObject({ words: [], tooLong: true, score: 2 });
   });
 
   it("leaves out a recipient or greeting the model left empty, for the English ones to fill in", async () => {
