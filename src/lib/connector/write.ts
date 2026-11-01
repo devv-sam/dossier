@@ -42,7 +42,7 @@ export const writtenLetterSchema = z.object({
     .array(z.object({ label: z.string().max(60).default(""), text: z.string().min(1).max(3000) }))
     .min(1)
     .max(6)
-    .describe("3–4 paragraphs, about 200–300 words together, without greeting, sign-off or name"),
+    .describe("3 short paragraphs, about 120–170 words together, without greeting, sign-off or name"),
   sign_off: z.string().max(60).default("").describe("e.g. 'Warm regards,'; empty uses the tone's own"),
 });
 
