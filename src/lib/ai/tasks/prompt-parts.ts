@@ -155,7 +155,14 @@ export const COVER_LETTER_APPROACH = `The reader has the resume already, so the 
 - Why this role, why this company and why now. Take the reasons from the posting, the profile and the candidate's facts; leave out a reason they don't back up rather than invent motives or facts about the company.
 - The problem the candidate would be hired to solve, as the posting shows it.
 - Above all, where the candidate has already solved that problem, or the closest one their profile shows: one or two specific stories (the challenge, the decisions made, the result, as far as the profile tells them) rather than a walk through their roles or a list of skills. What counts is having faced a similar challenge, not having held the right title.
-- Keep it short and specific. The aim isn't a letter that reads as well written but one that makes the reader want to talk to the candidate, so skip stock phrases such as "I am writing to apply" or "I am passionate about".`;
+- Keep it short and specific. The aim isn't a letter that reads as well written but one that makes the reader want to talk to the candidate.
+
+Write like a real person writing to one reader, not like a template:
+- Mix short sentences with longer ones, in plain words a smart friend would use. Don't start two sentences in a row with the same word, and don't start most of them with "I".
+- Be specific: name the project, the tool, the number the profile gives. A sentence that would fit a letter to any company gets cut.
+- Don't open with "I am writing to apply" or any statement of enthusiasm. Open with the specific thing that makes this role interesting to the candidate.
+- Avoid these words and phrases: excited, thrilled, eager, passionate, "aligns perfectly", "great fit", "I am confident that", "I believe that", delve, leverage, utilize, unlock, empower, elevate, foster, cultivate, facilitate, streamline, seamless, robust, holistic, innovative, cutting-edge, user-centric, journey, landscape, testament, "deep understanding", "contribute meaningfully", significantly, crucial, essential, Additionally, Furthermore, Moreover, "In conclusion", "look forward to hearing from you", "at your convenience".
+- No exclamation marks, no rhetorical questions, no "not only X but also Y" or "it's not X, it's Y", no lists of three abstract nouns, and no closing paragraph that summarises the letter. Close with one plain sentence offering to talk.`;
 
 /** Joins the parts of a system prompt. */
 export function system(...parts: (string | false | null | undefined)[]): string {

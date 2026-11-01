@@ -23,7 +23,7 @@ import {
   type Task,
 } from "./prompt-parts";
 
-export const WRITE_COVER_LETTER_VERSION = "write-cover-letter@5";
+export const WRITE_COVER_LETTER_VERSION = "write-cover-letter@6";
 
 const answerSchema = z.object({
   recipient: z.string(),
@@ -36,8 +36,8 @@ const INSTRUCTIONS = `You write a candidate's cover letter for one job, as JSON.
 
 - recipient: the address block, one line per line: who it's for (the company's hiring team, or the contact person the posting names, at the company), then the place if the job has one. Usual for a letter in its language, e.g. "Ledgerly · Hiring team\\nAmsterdam".
 - greeting: the salutation before the first paragraph, usual for a letter in its language, with its punctuation: the contact person by name when the posting names one, else the hiring team, e.g. "Dear Ledgerly team,".
-- paragraphs: 3–4 paragraphs, about 200–300 words together. Open with why this role and this company, then the problem the job is there to solve and where the candidate has solved it before, and close by inviting a conversation, with where the candidate is based if it matters for the job. No greeting, sign-off or name in them: those are separate.
-- label: a short English name for each paragraph's purpose, e.g. "Why this role", "The challenge", "Where I've solved it", "Closing".
+- paragraphs: 3 short paragraphs, about 120–170 words together, never more than 200. Open with why this role and this company in one or two sentences, then where the candidate has solved a similar problem before (one specific story), and close in one or two sentences by inviting a conversation, with where the candidate is based if it matters for the job. No greeting, sign-off or name in them: those are separate.
+- label: a short English name for each paragraph's purpose, e.g. "Why this role", "Where I've solved it", "Closing".
 - Where the job asks for something the profile doesn't have ("gap"), don't claim it. If it matters, say so honestly in a sentence and show how the candidate would close the gap.
 - signOff: the closing line before the name, matching the tone, with its punctuation (e.g. "Warm regards,").
 - The sender's name, contact details and the date are added from the profile; don't write them.`;
