@@ -80,15 +80,18 @@ export const writeCoverLetter: Task<CoverLetterInput, Unit[]> = async (provider,
   const ask = (messages: { role: "user" | "assistant"; content: string }[]) =>
     provider.complete({ system: instructions, messages, schema: answerSchema, schemaName: "cover_letter", creativity: options.creativity, signal: options.signal });
 
-  let answer = await ask([request]);
-
   // English letters get the tone's own sign-off; other languages keep the model's.
   const language = options.language ?? extracted.language ?? "English";
-  // Small models ignore a list of words to avoid, so check it: up to two rewrites, each kept only if it's no worse.
-  if (/^english$/i.test(language)) {
+  const english = /^english$/i.test(language);
+  // Small models ignore a list of words to avoid, so swap the common ones for plain words.
+  const cleaned = (written: z.infer<typeof answerSchema>) => (english ? { ...written, paragraphs: written.paragraphs.map((paragraph) => ({ ...paragraph, text: plainWords(paragraph.text) })) } : written);
+
+  let answer = cleaned(await ask([request]));
+  // What's left gets up to two rewrites, each kept only if it's no worse.
+  if (english) {
     let problems = voiceProblems(answer.paragraphs);
     for (let attempt = 0; attempt < MAX_REWRITES && problems.score > 0; attempt++) {
-      const retry = await ask([request, { role: "assistant", content: JSON.stringify(answer) }, { role: "user", content: rewriteRequest(problems) }]);
+      const retry = cleaned(await ask([request, { role: "assistant", content: JSON.stringify(answer) }, { role: "user", content: rewriteRequest(problems) }]));
       const next = voiceProblems(retry.paragraphs);
       if (next.score <= problems.score) {
         answer = retry;
@@ -119,6 +122,39 @@ const MAX_REWRITES = 2;
 /** Words and phrases that mark a letter as machine-written (see COVER_LETTER_APPROACH). */
 const STOCK_WORDS =
   /\b(?:excit\w*|thrill\w*|eager\w*|passion\w*|aligns? (?:perfectly|with)|great fit|leverag\w*|utiliz\w*|empower\w*|foster\w*|cultivat\w*|facilitat\w*|streamlin\w*|seamless\w*|robust|holistic|innovative|cutting-edge|user-centric|journey|landscape|testament|furthermore|moreover|additionally|significantly|crucial|essential|resonates?|delve|revolutioniz\w*|I believe|I am confident|I'm confident|boundaries)\b/gi;
+
+const VERB_ENDINGS: Record<string, string> = { e: "use", es: "uses", ed: "used", ing: "using" };
+const useVerb = (_match: string, ending: string) => VERB_ENDINGS[ending.toLowerCase()] ?? "use";
+
+/** Stock words with a plain swap that keeps the sentence working, in the order they're tried. */
+const PLAIN_SWAPS: [RegExp, string | ((match: string, ending: string) => string)][] = [
+  [/\b(?:excited|thrilled|eager) to\b/gi, "glad to"],
+  [/\b(?:excited|thrilled|eager|passionate) (?:about|by)\b/gi, "interested in"],
+  [/\bpassion for\b/gi, "interest in"],
+  [/\b(?:excited|thrilled)\b/gi, "glad"],
+  [/\beager\b/gi, "keen"],
+  [/\bpassionate\b/gi, "keen"],
+  [/\bseamless(ly)?\b/gi, "smooth$1"],
+  [/\brobust\b/gi, "solid"],
+  [/\b(?:innovative|cutting-edge)\b/gi, "new"],
+  [/\buser-centric\b/gi, "user-focused"],
+  [/\bholistic\b/gi, "whole"],
+  [/\bleverag(e|es|ed|ing)\b/gi, useVerb],
+  [/\butiliz(e|es|ed|ing)\b/gi, useVerb],
+  [/\baligns? (?:perfectly )?with\b/gi, "matches"],
+  [/\bgreat fit\b/gi, "good match"],
+  [/\b(?:crucial|essential)\b/gi, "important"],
+  [/\bsignificantly /gi, ""],
+];
+
+/** A letter's text with the stock words in PLAIN_SWAPS replaced, and "Additionally," style openers dropped. */
+export function plainWords(text: string): string {
+  let result = text;
+  for (const [pattern, swap] of PLAIN_SWAPS) result = typeof swap === "string" ? result.replace(pattern, swap) : result.replace(pattern, swap);
+  return result
+    .replace(/(^|[.!?]\s+)(?:Additionally|Furthermore|Moreover),?\s+([A-Za-z])/g, (_, lead: string, letter: string) => lead + letter.toUpperCase())
+    .replace(/\s{2,}/g, " ");
+}
 
 /** What's wrong with a letter's voice: the stock words in it, whether it runs long, and a score to compare drafts by. */
 export function voiceProblems(paragraphs: { text: string }[]): { words: string[]; wordCount: number; tooLong: boolean; score: number } {
